@@ -1,9 +1,12 @@
 <template>
   <div id="app">
+    <h1>{{ rating }} Sterne</h1>
     <!-- <List msg="Welcome to Your Vue.js App" /> -->
     <ul>
       <li v-for="item in items" v-bind:key="item">
-        {{ item.author + item.text }}
+        <h2>{{ item.rating }} Sterne</h2>
+        <p>{{ item.text }}</p>
+        <p>{{ item.author }}</p>
       </li>
     </ul>
   </div>
@@ -17,16 +20,22 @@ export default {
   data: function() {
     return {
       items: [
-        { author: "Name1", text: "irgendwas" },
-        { author: "Name2", text: "Message1" },
-        { author: "irgendwas", text: "Message2" },
-        { author: "Name3", text: "Message3" }
-      ]
+        { author: "Name1", text: "irgendwas", rating: 5 },
+        { author: "Name2", text: "Message1", rating: 4 },
+        { author: "irgendwas", text: "Message2", rating: 3 },
+        { author: "Name3", text: "Message3", rating: 2 },
+        { author: "Name3", text: "Message3", rating: 4.5 }
+      ],
+      rating: 3.5
     };
   },
-  components: {}
+  methods: {
+    getRating: function () {
+      axios.get()
+      .then()
+    }
+  }
 };
-</script>
 
 <style>
 #app {
@@ -40,5 +49,8 @@ export default {
 
 li {
   list-style: none;
+  color:blue;
+  border: black solid 1px;
+  padding: 3em 0 3em 0;
 }
 </style>
