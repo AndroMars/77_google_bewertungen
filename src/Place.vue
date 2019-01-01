@@ -30,12 +30,13 @@ export default {
     };
   },
   methods: {
-    getRating: function () {
-      axios.get()
-      .then()
+    getRating: function() {
+      //  axios.get()
+      //  .then()
     }
   }
 };
+</script>
 
 <style>
 #app {
@@ -49,7 +50,6 @@ export default {
 
 li {
   list-style: none;
-  color:blue;
   border: black solid 1px;
   padding: 3em 0 3em 0;
 }
