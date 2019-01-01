@@ -1,10 +1,10 @@
 import Vue from "vue";
-import App from "./App.vue";
+import Place from "./Place.vue";
 
 Vue.config.productionTip = false;
 
 let vm = new Vue({
-  render: h => h(App)
-}).$mount("#mp_rate");
+  render: h => h(Place)
+}).$mount("#maps_place");
 
 console.log(vm.$data);
