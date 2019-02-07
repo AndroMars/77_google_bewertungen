@@ -1,1 +1,6 @@
-{}
+{
+  "projects": {
+    "staging": "mase-b262f",
+    "default": "mase-b262f"
+  }
+}
