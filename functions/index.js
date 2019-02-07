@@ -13,3 +13,10 @@ const functions = require('firebase-functions');
 exports.helloWorld = functions.https.onRequest((request, response) => {
     response.send("Hello from Firebase!");
 });
+
+// Injoy Stockack Place ID : ChIJv1kVEVpmmkcRRgn5ZOT6PfY
+// Google Place API : AIzaSyBg5HJZLJHcJozUtQuhNlpqPbK5z744EGA
+
+const googleMapsClient = require('@google/maps').createClient({
+    key: 'AIzaSyBg5HJZLJHcJozUtQuhNlpqPbK5z744EGA'
+  });
