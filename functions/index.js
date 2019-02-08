@@ -21,7 +21,7 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
     // Geocode an address. #keine Ahnung was das ist
 
 googleMapsClient.geocode({
-    address: '1600 Amphitheatre Parkway, Mountain View, CA'
+      place_id : "ChIJv1kVEVpmmkcRRgn5ZOT6PfY"
   }, function(err, res) {
     if (!err) {
       console.log(res.json.results);
